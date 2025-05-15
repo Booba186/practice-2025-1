@@ -1,0 +1,10 @@
+baseURL      = "/"
+title        = "Премия KPI • Автоматизация расчёта премий"
+languageCode = "ru"
+theme        = "PaperMod"
+
+[params]
+  ShowReadingTime   = false
+  ShowShareButtons  = false
+  assets = { customCSS = ["css/custom.css"] }
+  mainSections = []

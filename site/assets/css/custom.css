@@ -1,0 +1,45 @@
+/* ────────────────────────────────────────
+   1. Шапка с градиентом и белыми ссылками
+   ──────────────────────────────────────── */
+header.navbar{
+  background:linear-gradient(90deg,#050d64 0%,#0b1a9b 100%);
+  box-shadow:0 2px 4px rgba(0,0,0,.15);
+}
+header.navbar a{
+  color:#fff !important;
+  font-weight:600;
+}
+
+/* подчёркиваем активный пункт меню */
+header a.active{border-bottom:2px solid #00b0ff;}
+
+/* ────────────────────────────────────────
+   2. Hero-секция (если используете partial/hero.html)
+   ──────────────────────────────────────── */
+.hero{
+  padding:3rem 1rem;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(90deg,#050d64 0%,#0b1a9b 100%);
+}
+.hero .subtitle{
+  font-size:1.25rem;
+  font-weight:300;
+  margin-top:.5rem;
+}
+
+/* ────────────────────────────────────────
+   3. Карточки (шорткод {{< card >}} или колонки)
+   ──────────────────────────────────────── */
+.card{
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.10);
+  padding:1.5rem 2rem;
+  margin:1.5rem 0;
+}
+
+/* ────────────────────────────────────────
+   4. Серый фон основной области
+   ──────────────────────────────────────── */
+section.main{background:#f3f3f5;padding-bottom:4rem;}

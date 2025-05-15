@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Ресурсы | Премия KPI • Автоматизация расчёта премий</title>
+<meta name="keywords" content="">
+<meta name="description" content="Книги 📚
+
+  
+      
+          Автор
+          Название
+          Что взяли для проекта
+      
+  
+  
+      
+          К. Харт
+          Clean Architecture
+          Структура слоёв и принципы SOLID для модуля KPI-расчёта
+      
+      
+          Б. Керниган, Р. Пайк
+          The Go Programming Language
+          Конкурентность (goroutines) и работа с JSON
+      
+      
+          В. Саваченко
+          PostgreSQL. Искусство разработки БД
+          Индексы и оптимизация запросов KPI-отчётов
+      
+      
+          Д. Бэги
+          Vue.js in Action
+          Состояние компонентов и реактивные формы
+      
+  
+
+Статьи 📰
+
+Методика расчёта KPI в культурных учреждениях (2023).
+Best Practices JWT Security (OWASP cheat-sheet).
+UX-паттерны «таблица &#43; фильтр» для больших данных (NN Group, 2022).
+
+Инструменты и шаблоны 🛠️
+
+PlantUML — диаграммы Ганта и ER-схемы.
+Taskfile Go — единая точка запуска / линтинга.
+Figma UI Kit (Material 3) для быстрой сборки макетов.
+pytest &#43; requests — тестирование публичного REST API.
+">
+<meta name="author" content="">
+<link rel="canonical" href="//localhost:1313/resources/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="//localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="//localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="//localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="//localhost:1313/resources/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="//localhost:1313/" accesskey="h" title="Премия KPI • Автоматизация расчёта премий (Alt + H)">Премия KPI • Автоматизация расчёта премий</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="//localhost:1313/" title="Главная">
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/about/" title="О проекте">
+                    <span>О проекте</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/participants/" title="Участники">
+                    <span>Участники</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/journal/" title="Журнал проекта">
+                    <span>Журнал проекта</span>
+                </a>
+            </li>
+            <li>
+                <a href="//localhost:1313/resources/" title="Ресурсы">
+                    <span class="active">Ресурсы</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Ресурсы
+    </h1>
+  </header> 
+  <div class="post-content"><h2 id="книги-">Книги 📚<a hidden class="anchor" aria-hidden="true" href="#книги-">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Автор</th>
+          <th>Название</th>
+          <th>Что взяли для проекта</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>К. Харт</strong></td>
+          <td><em>Clean Architecture</em></td>
+          <td>Структура слоёв и принципы SOLID для модуля KPI-расчёта</td>
+      </tr>
+      <tr>
+          <td><strong>Б. Керниган, Р. Пайк</strong></td>
+          <td><em>The Go Programming Language</em></td>
+          <td>Конкурентность (goroutines) и работа с JSON</td>
+      </tr>
+      <tr>
+          <td><strong>В. Саваченко</strong></td>
+          <td><em>PostgreSQL. Искусство разработки БД</em></td>
+          <td>Индексы и оптимизация запросов KPI-отчётов</td>
+      </tr>
+      <tr>
+          <td><strong>Д. Бэги</strong></td>
+          <td><em>Vue.js in Action</em></td>
+          <td>Состояние компонентов и реактивные формы</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="статьи-">Статьи 📰<a hidden class="anchor" aria-hidden="true" href="#статьи-">#</a></h2>
+<ul>
+<li>Методика расчёта KPI в культурных учреждениях (2023).</li>
+<li>Best Practices JWT Security (OWASP cheat-sheet).</li>
+<li>UX-паттерны «таблица + фильтр» для больших данных (NN Group, 2022).</li>
+</ul>
+<h2 id="инструменты-и-шаблоны-">Инструменты и шаблоны 🛠️<a hidden class="anchor" aria-hidden="true" href="#инструменты-и-шаблоны-">#</a></h2>
+<ul>
+<li><strong>PlantUML</strong> — диаграммы Ганта и ER-схемы.</li>
+<li><strong>Taskfile Go</strong> — единая точка запуска / линтинга.</li>
+<li><strong>Figma UI Kit (Material 3)</strong> для быстрой сборки макетов.</li>
+<li><strong>pytest + requests</strong> — тестирование публичного REST API.</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="//localhost:1313/">Премия KPI • Автоматизация расчёта премий</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

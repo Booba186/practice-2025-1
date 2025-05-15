@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Главная on Премия KPI • Автоматизация расчёта премий</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content in Главная on Премия KPI • Автоматизация расчёта премий</description>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>ru</language>
+    <lastBuildDate>Sun, 18 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>О проекте</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>&lt;h3 id=&#34;актуальность&#34;&gt;Актуальность&lt;/h3&gt;
+&lt;p&gt;Ручной подсчёт KPI занимает до 40 % рабочего времени бухгалтерии и приводит к ошибкам — сотрудники получают неверные суммы премий, а руководство не видит объективной картины эффективности.&lt;/p&gt;
+&lt;h3 id=&#34;цель&#34;&gt;Цель&lt;/h3&gt;
+&lt;p&gt;Создать &lt;strong&gt;единый веб-инструмент&lt;/strong&gt;, который:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;собирает данные о деятельности сотрудника;&lt;/li&gt;
+&lt;li&gt;автоматически рассчитывает KPI;&lt;/li&gt;
+&lt;li&gt;формирует отчёты для руководства;&lt;/li&gt;
+&lt;li&gt;хранит историю начислений.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;основные-задачи&#34;&gt;Основные задачи&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Сбор требований и анализ текущего процесса.&lt;/li&gt;
+&lt;li&gt;Проектирование базы данных и KPI-формул.&lt;/li&gt;
+&lt;li&gt;Реализация backend (Go + PostgreSQL) и REST API.&lt;/li&gt;
+&lt;li&gt;Разработка web-интерфейса (Vue 3).&lt;/li&gt;
+&lt;li&gt;Тестирование (≥ 50 тест-кейсов, нагрузка 20 одновременных пользователей).&lt;/li&gt;
+&lt;li&gt;Ввод в эксплуатацию и подготовка пользовательской инструкции.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;проблематика-проекта&#34;&gt;Проблематика проекта&lt;/h3&gt;
+&lt;p&gt;Центральная городская модельная библиотека
+имени А. С. Пушкина имеет несколько филиалов
+по городу Орёл и достаточно большое количество
+сотрудников. Кроме должностного оклада у
+сотрудников существует премиальная часть з/п,
+которая выплачивается по результатам работы
+каждого. Оценка эффективности деятельности
+персонала часто становится трудной задачей для
+руководителей библиотеки, поскольку
+специальной автоматизированной системы у них
+нет. Возникают проблемы с точностью и качеством
+оценивания сотрудников, требуются
+существенные затраты времени на процесс
+оценки эффективности деятельности сотрудников
+библиотеки и анализа деятельности компании в
+целом. Поэтому заказчик нуждается в
+специализированной информационной системе
+для анализа KPI персонала.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Участники</title>
+      <link>//localhost:1313/participants/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/participants/</guid>
+      <description>&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;ФИО&lt;/th&gt;
+          &lt;th&gt;Подгруппа&lt;/th&gt;
+          &lt;th&gt;Роль&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Гладилин Алексей Алексеевич&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;Ответственный за подгруппу, архитектура API&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Тошин Александр Владимирович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;JWT-токены, безопасность&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Фокин Павел Вячеславович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;Пагинация, модель Role&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Павленко Владислав Сергеевич&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;dev/prod конфиги, CI/CD&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Травников Александр Романович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;CRUD оптимизация&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Нозиров Максим Эдуардович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;Модульная структура&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Вашкевич Алексей Константинович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;Фильтр Certificates → Criteria&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Жовтенко Андрей Андреевич&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;Хэширование паролей&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Наниев Георгий Вилялович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Backend&lt;/td&gt;
+          &lt;td&gt;Логика ядра&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Васильев Кирилл Александрович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Frontend&lt;/td&gt;
+          &lt;td&gt;Ответственный за подгруппу, Vue-компоненты&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Змеева Дарья Васильевна&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Frontend&lt;/td&gt;
+          &lt;td&gt;Экран загрузки сертификатов&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Мельников Алексей Владимирович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Frontend&lt;/td&gt;
+          &lt;td&gt;Список сотрудников&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Свистушкин Егор Евгеньевич&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Дизайн&lt;/td&gt;
+          &lt;td&gt;Руководитель дизайна, UI-гайд&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Канода Кирилл Леонидович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Дизайн&lt;/td&gt;
+          &lt;td&gt;Макеты экранов&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Владимирова Елизавета Денисовна&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Дизайн&lt;/td&gt;
+          &lt;td&gt;UX-тесты, правки по фидбеку&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Потапов Семён Александрович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Дизайн&lt;/td&gt;
+          &lt;td&gt;Иконография, стили&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Поликарпов Никита Николаевич&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;QA&lt;/td&gt;
+          &lt;td&gt;Ответственный за подгруппу, тест-кейсы&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Кудайбергенов Алишер Жолдошбекович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;QA&lt;/td&gt;
+          &lt;td&gt;Автотесты интеграции&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Попрадухин Дмитрий Алексеевич&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;QA&lt;/td&gt;
+          &lt;td&gt;Smoke-тесты&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Миколай Антон Дмитриевич&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Менеджеры&lt;/td&gt;
+          &lt;td&gt;Планирование спринтов&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Лузина Алиса Денисовна&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Менеджеры&lt;/td&gt;
+          &lt;td&gt;Презентации, видео&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Скляренко Михаил Максимович&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Менеджеры&lt;/td&gt;
+          &lt;td&gt;Финальный отчёт&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Куратор проекта: &lt;em&gt;Морозова Ольга Ивановна&lt;/em&gt;&lt;br&gt;
+Партнёр-заказчик: &lt;em&gt;МКУК ЦБС г. Орла, ЦГБ им. А. С. Пушкина&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ресурсы</title>
+      <link>//localhost:1313/resources/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/resources/</guid>
+      <description>&lt;h2 id=&#34;книги-&#34;&gt;Книги 📚&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Автор&lt;/th&gt;
+          &lt;th&gt;Название&lt;/th&gt;
+          &lt;th&gt;Что взяли для проекта&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;К. Харт&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;em&gt;Clean Architecture&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;Структура слоёв и принципы SOLID для модуля KPI-расчёта&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Б. Керниган, Р. Пайк&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;em&gt;The Go Programming Language&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;Конкурентность (goroutines) и работа с JSON&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;В. Саваченко&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;em&gt;PostgreSQL. Искусство разработки БД&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;Индексы и оптимизация запросов KPI-отчётов&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Д. Бэги&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;em&gt;Vue.js in Action&lt;/em&gt;&lt;/td&gt;
+          &lt;td&gt;Состояние компонентов и реактивные формы&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;статьи-&#34;&gt;Статьи 📰&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Методика расчёта KPI в культурных учреждениях (2023).&lt;/li&gt;
+&lt;li&gt;Best Practices JWT Security (OWASP cheat-sheet).&lt;/li&gt;
+&lt;li&gt;UX-паттерны «таблица + фильтр» для больших данных (NN Group, 2022).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;инструменты-и-шаблоны-&#34;&gt;Инструменты и шаблоны 🛠️&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PlantUML&lt;/strong&gt; — диаграммы Ганта и ER-схемы.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Taskfile Go&lt;/strong&gt; — единая точка запуска / линтинга.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Figma UI Kit (Material 3)&lt;/strong&gt; для быстрой сборки макетов.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;pytest + requests&lt;/strong&gt; — тестирование публичного REST API.&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Этап 3 · Тестирование, запуск и поддержка (апрель – май 2025)</title>
+      <link>//localhost:1313/journal/2025-05-20-release/</link>
+      <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/journal/2025-05-20-release/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Тестирование&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;50 + юнит- и интеграционных тест-кейсов.&lt;/li&gt;
+&lt;li&gt;Стратегия тестирования и чек-лист smoke-тестов.&lt;/li&gt;
+&lt;li&gt;Кросс-браузерная проверка Edge / Chrome / Firefox.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Менеджмент / медиа&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Записан и смонтирован видеоролик демо-версии.&lt;/li&gt;
+&lt;li&gt;Подготовлен PDF-отчёт и диаграмма Ганта.&lt;/li&gt;
+&lt;li&gt;Внутренняя презентация для сотрудников библиотеки.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Финальные доработки&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Страница &lt;strong&gt;404&lt;/strong&gt; + собственная логика.&lt;/li&gt;
+&lt;li&gt;Финальный рефакторинг кода бекенда и фронтенда.&lt;/li&gt;
+&lt;li&gt;Деплой на продуктовый сервер, обучение персонала.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Релиз состоялся &lt;strong&gt;7 мая 2025&lt;/strong&gt;. Среднее время исправления P0-багов ≤ 2 ч; оценочный рост эффективности ≈ 20 %.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Этап 2 · Разработка и интеграция (март – апрель 2025)</title>
+      <link>//localhost:1313/journal/2025-03-31-development/</link>
+      <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/journal/2025-03-31-development/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Backend&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Энд-пойнт &lt;code&gt;Certificates → Criteria&lt;/code&gt; (фильтрация по пользователю).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JWT-авторизация&lt;/strong&gt; + временные refresh-токены.&lt;/li&gt;
+&lt;li&gt;Пароли перенесены на &lt;code&gt;bcrypt&lt;/code&gt;, улучшена безопасность.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pagination&lt;/strong&gt;: параметры &lt;code&gt;page / per_page&lt;/code&gt; во всех GET-запросах.&lt;/li&gt;
+&lt;li&gt;Перенесли создание приложения из &lt;code&gt;main.py&lt;/code&gt; в &lt;code&gt;core/app_factory.py&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Начата переразбивка кода на модули.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Frontend&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cтраница загрузки сертификата, просмотр/удаление, подтверждение баллов.&lt;/li&gt;
+&lt;li&gt;Список сотрудников с поиском и фильтром.&lt;/li&gt;
+&lt;li&gt;Страница критериев + логика добавления/удаления KPI.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Дизайн&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Figma-прототип, адаптив под мобильные.&lt;/li&gt;
+&lt;li&gt;Корпоративная цветовая схема вёрстки.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Итог: готов &lt;strong&gt;MVP&lt;/strong&gt; (CRUD сотрудников, авторизация, формы ввода KPI). Покрытие тестами ≈ 40 %.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Этап 1 · Инициация и аналитика (февраль 2025)</title>
+      <link>//localhost:1313/journal/2025-02-15-analysis/</link>
+      <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/journal/2025-02-15-analysis/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Backend / DevOps&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Заменили токен сброса пароля → &lt;strong&gt;JWT с TTL&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Интегрировали таблицу &lt;strong&gt;Role&lt;/strong&gt; и проверку прав &lt;code&gt;@require_role()&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Убрали поле &lt;strong&gt;&lt;code&gt;is_admin&lt;/code&gt;&lt;/strong&gt; — теперь только связь &lt;code&gt;User ↔ Role&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Разделили конфиги &lt;strong&gt;dev / prod&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Документы / ТЗ&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Зафиксировали 6 ядра KPI-метрик.&lt;/li&gt;
+&lt;li&gt;Нарисовали архитектурную схему (UI + API + DB).&lt;/li&gt;
+&lt;li&gt;Утвердили стек — &lt;strong&gt;Go / PostgreSQL / Vue 3&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Итог: сформировано полное техзадание, расписаны спринты по 2 недели.&lt;/p&gt;&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>
