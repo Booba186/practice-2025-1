@@ -3,27 +3,34 @@ package blockchain
 import (
 	"bytes"
 	"crypto/sha256"
+	"encoding/gob"
 )
 
 type Block struct {
-	Index     int
-	Timestamp int64
-	Data      string
-	PrevHash  []byte
-	Hash      []byte
-	Nonce     int
+	Index        int
+	Timestamp    int64
+	Transactions []Transaction
+	PrevHash     []byte
+	Hash         []byte
+	Nonce        int
 }
 
 func (b *Block) CalculateHash() []byte {
-	headers := bytes.Join(
+	var txBuf bytes.Buffer
+	enc := gob.NewEncoder(&txBuf)
+	_ = enc.Encode(b.Transactions)
+
+	header := bytes.Join(
 		[][]byte{
-			[]byte(string(b.Index)),
-			[]byte(string(b.Timestamp)),
-			[]byte(b.Data),
+			IntToBytes(int64(b.Index)),
+			IntToBytes(b.Timestamp),
+			txBuf.Bytes(),
 			b.PrevHash,
-			[]byte(string(b.Nonce)),
-		}, []byte{})
-	hash := sha256.Sum256(headers)
+			IntToBytes(int64(b.Nonce)),
+		},
+		[]byte{},
+	)
+	hash := sha256.Sum256(header)
 	return hash[:]
 }
 
@@ -36,4 +43,10 @@ func (b *Block) Mine(difficulty int) {
 		}
 		b.Nonce++
 	}
+}
+
+func IntToBytes(num int64) []byte {
+	buf := new(bytes.Buffer)
+	_ = gob.NewEncoder(buf).Encode(num)
+	return buf.Bytes()
 }

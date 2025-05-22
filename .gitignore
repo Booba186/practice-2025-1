@@ -3,3 +3,6 @@ site/.hugo_build.lock
 site/public/
 
 site/public/
+
+# binary chain dump
+*.gob
